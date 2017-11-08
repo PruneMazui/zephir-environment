@@ -1,0 +1,9 @@
+[vagrant@localhost source]$ zephir init utils
+[vagrant@localhost source]$ cd utils
+[vagrant@localhost utils]$ zephir build
+[vagrant@localhost utils]$ sudo echo "extension=utils.so" > /etc/php.d/99-utils.ini
+[vagrant@localhost utils]$ php -a
+Interactive shell
+
+php > Utils\Greeting::say();
+hello zephir world!
