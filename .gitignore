@@ -39,3 +39,5 @@ compile.log
 /.project
 ext
 config.json
+/vendor
+
